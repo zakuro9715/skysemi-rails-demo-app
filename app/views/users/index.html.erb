@@ -1,55 +1,75 @@
 <style>
-  html, body{
+  html, body
+  {
     margin: 0;
   }
 
-  header{
+  header
+  {
     background-color: #226;
     padding: 8px;
     margin: 0px;
-    color: #eef
+    color: #eef;
+    box-shadow: 0px 2px 0px 0px #aaa;
   }
 
-  article{
+  article
+  {
     margin: 32px 16px 0px 16px;
   }
 
 
-  table{    
+  table
+  {    
     border-collapse: separate;
     border-spacing: 0;
-    border-left: solid 1px #888;
-    border-top: solid 1px #888;
-    border-radius: 8px;
-  }  
-  tbody tr:nth-child(odd){
+    border-left: solid 0px #888;
+    border-top: solid 0px #888;
+    border-radius: 8px 8px 0 0;
+  }
+
+  tbody tr:nth-child(odd)
+  {
     background-color: #ccc;
   }
   
-  table tr:first-child th:first-child{
-    border-radius: 8px 0 0 0;
+  table tr:first-child th:first-child
+  {
+    border-top-left-radius: 8px;
   }
   
-  table tr:first-child th:last-child {
-    border-radius: 0 8px 0 0;
+  table tr:first-child th:last-child 
+  {
+    border-top-right-radius: 8px;
   }
 
-  table tr:last-child td:first-child {
-    border-radius: 0 0 0 8px;
+  table tr:last-child td:last-child
+  {  
+    border-bottom-right-radius: 8px;
+  }
+  
+  table tr:last-child td:first-child
+  {
+    border-bottom-left-radius: 8px;
   }
 
-  table tr:last-child td:last-child {
-    border-radius: 0 0 8px 0;
-  }
-
-  td, th{
+  td, th
+  {
     padding: 4px;
     border-right: solid 1px #888;
     border-bottom: solid 1px #888;
     min-width: 80px;
   }
 
-  td:nth-child(n + 3), th:nth-child(n + 3){
+  tr td:first-child, tr th:first-child{
+    border-left: solid 1px #888;
+  }
+  table tr:first-child th{
+    border-top: solid 1px #888;
+  }
+
+  td:nth-child(n + 3), th:nth-child(n + 3)
+  {
     text-align: center;
   }
 
